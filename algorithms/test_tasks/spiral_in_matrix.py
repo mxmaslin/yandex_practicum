@@ -5,11 +5,11 @@ def up(x_minus, i, matrix):
         print(matrix[j][x_minus + 1 - i])
 
 
-def right(x_minus, center_offset, i, matrix):
+def right(x_minus, i, matrix):
     step_range_start, step_range_end = x_minus - i, x_minus + i
     step_range = range(step_range_start, step_range_end + 1)
     for j in step_range:
-        print(matrix[x_minus - i][center_offset + j])
+        print(matrix[x_minus - i][j + 2])
 
 
 def down(x, x_plus, i, matrix):
@@ -34,10 +34,9 @@ def spiral(matrix):
     x_minus = x - 1
     x_plus = x + 1
     print(matrix[half_side][half_side])
-    center_offset = 2
     for i in range(half_side):
         up(x_minus, i, matrix)
-        right(x_minus, center_offset, i, matrix)
+        right(x_minus, i, matrix)
         down(x, x_plus, i, matrix)
         left(x, i, matrix)
     for i in reversed(range(side_length - 1)):
@@ -49,5 +48,6 @@ matrix = []
 for x in range(n):
     row = [int(x) for x in input().split()]
     matrix.append(row)
-    
+
+
 spiral(matrix)

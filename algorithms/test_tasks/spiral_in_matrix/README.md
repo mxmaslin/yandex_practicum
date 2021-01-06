@@ -55,4 +55,4 @@
 |   | 0 |
 |   | 9 |
 
-[**Решение**](https://github.com/mxmaslin/yandex_practicum/blob/master/algorithms/test_tasks/three_chips/three_chips.py)
+[**Решение**](https://github.com/mxmaslin/yandex_practicum/blob/master/algorithms/test_tasks/spiral_in_matrix/spiral_in_matrix.py)

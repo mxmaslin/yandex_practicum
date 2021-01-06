@@ -35,4 +35,4 @@
 
 Решение должно работать не дольше, чем за O(n^2). Ограничение по памяти — O(1). Гарантируется, что для всех тестовых примеров в задаче может быть только 1 верный ответ.
 
-[**Решение**]()
+[**Решение**](https://github.com/mxmaslin/yandex_practicum/blob/master/algorithms/test_tasks/three_chips/three_chips.py)

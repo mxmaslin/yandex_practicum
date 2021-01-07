@@ -1,28 +1,23 @@
 def up(x_minus, i, matrix):
-    step_range_start, step_range_end = x_minus - i, x_minus + i
-    step_range = reversed(range(step_range_start, step_range_end + 1))
-    for j in step_range:
+    step_range = range(x_minus - i, x_minus + i + 1)
+    for j in reversed(step_range):
         print(matrix[j][x_minus + 1 - i])
 
 
 def right(x_minus, i, matrix):
-    step_range_start, step_range_end = x_minus - i, x_minus + i
-    step_range = range(step_range_start, step_range_end + 1)
+    step_range = range(x_minus - i, x_minus + i + 1)
     for j in step_range:
         print(matrix[x_minus - i][j + 2])
 
 
 def down(x, x_plus, i, matrix):
-    step_range_start, step_range_end = x - i, x_plus + i
-    step_range = range(step_range_start, step_range_end + 1)
+    step_range = range(x - i, x_plus + i + 1)    
     for j in step_range:
         print(matrix[j][x + i + 1])
 
 
 def left(x, i, matrix):
-    l1, l2 = x, x + 1
-    step_range_start, step_range_end = l1 - i, l2 + i
-    step_range = range(step_range_start, step_range_end + 1)
+    step_range = range(x - i, x + i + 2)    
     for j in step_range:
         print(matrix[x + i + 1][x + x - j])
 
